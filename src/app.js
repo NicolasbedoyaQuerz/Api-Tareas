@@ -10,7 +10,7 @@ const CategoryRoutes = require('./routes/category.router');
 db.sync()
     .then(() => console.log("base de datos sincronizada"))
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT ?? 8000;
 
 const app = express();
 
